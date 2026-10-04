@@ -1,0 +1,90 @@
+# This is the Happy birthday song
+
+
+
+int buzzer = 8;
+
+void playNote(int frequency, int duration) {
+  tone(buzzer, frequency);
+  delay(duration);
+  noTone(buzzer);
+  delay(40);
+}
+
+void setup() {
+
+  // Happy Birthday — first line
+  playNote(392, 300);  // G
+  playNote(392, 150);  // G
+  playNote(440, 450);  // A
+  playNote(392, 450);  // G
+  playNote(523, 450);  // C
+  playNote(494, 700);  // B
+
+  // Second line
+  playNote(392, 300);  // G
+  playNote(392, 150);  // G
+  playNote(440, 450);  // A
+  playNote(392, 450);  // G
+  playNote(587, 450);  // D
+  playNote(523, 700);  // C
+
+  // Third line
+  playNote(392, 300);  // G
+  playNote(392, 150);  // G
+  playNote(784, 450);  // High G
+  playNote(659, 450);  // E
+  playNote(523, 450);  // C
+  playNote(494, 450);  // B
+  playNote(440, 700);  // A
+
+  // Final line
+  playNote(698, 300);  // F
+  playNote(698, 150);  // F
+  playNote(659, 450);  // E
+  playNote(523, 450);  // C
+  playNote(587, 450);  // D
+  playNote(523, 900);  // C
+
+  noTone(buzzer);
+}
+
+void loop() {
+  // Happy Birthday — first line
+  playNote(392, 300);  // G
+  playNote(392, 150);  // G
+  playNote(440, 450);  // A
+  playNote(392, 450);  // G
+  playNote(523, 450);  // C
+  playNote(494, 700);  // B
+
+  // Second line
+  playNote(392, 300);  // G
+  playNote(392, 150);  // G
+  playNote(440, 450);  // A
+  playNote(392, 450);  // G
+  playNote(587, 450);  // D
+  playNote(523, 700);  // C
+
+  // Third line
+  playNote(392, 300);  // G
+  playNote(392, 150);  // G
+  playNote(784, 450);  // High G
+  playNote(659, 450);  // E
+  playNote(523, 450);  // C
+  playNote(494, 450);  // B
+  playNote(440, 700);  // A
+
+  // Final line
+  playNote(698, 300);  // F
+  playNote(698, 150);  // F
+  playNote(659, 450);  // E
+  playNote(523, 450);  // C
+  playNote(587, 450);  // D
+  playNote(523, 900);  // C
+
+  noTone(buzzer);
+}
+
+Make sure to attach your buzzer to PIN 8
+
